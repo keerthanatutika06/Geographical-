@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/back"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SignUp"
+    >
+    <TextView
+        android:text="Sign Up"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlay">
+        <com.google.android.material.textfield.TextInputEditText
+     style="@style/inputedit"
+            android:inputType="textPersonName"
+            android:id="@+id/name"
+            android:hint="Name"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+          />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlay">
+        <com.google.android.material.textfield.TextInputEditText
+android:drawableStart="@drawable/ic_baseline_mobile_friendly_24"
+            android:hint="Mobile Number"
+            style="@style/inputedit"
+            android:inputType="phone"
+            android:id="@+id/mobile"
+
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/inputlay"
+    >
+        <com.google.android.material.textfield.TextInputEditText
+style="@style/inputedit"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:hint="Mail-Id"
+            android:id="@+id/mail"
+            android:inputType="textEmailAddress"
+         />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/inputlay"
+>
+        <com.google.android.material.textfield.TextInputEditText
+style="@style/inputedit"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:background="@drawable/curve"
+  />
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#4B64F6"
+    android:text="Sign Up"
+    android:id="@+id/sign"
+    android:textColor="@color/white"
+    android:background="@drawable/curve"
+    android:layout_height="50dp"/>
+    <TextView
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Already a user ?"
+android:layout_gravity="end"
+        android:id="@+id/already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
